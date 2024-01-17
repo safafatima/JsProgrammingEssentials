@@ -27,6 +27,29 @@ function show(){
     }
     show();
     
-    console.log(functionVar); // Throws ReferenceError
-    console.log(functionLet); // Throws ReferenceError
-    console.log(functionConst); // Throws ReferenceError
+    // console.log(functionVar); // Throws ReferenceError
+    // console.log(functionLet); // Throws ReferenceError
+    // console.log(functionConst); // Throws ReferenceError
+
+    {
+        const practiceConst = "const is same";
+        let practiceLet = "let is same";
+        var practiceVar = "var is same";
+
+        // practiceConst = "const changed inside"; // errror
+        practiceLet = "let changed inside";
+        var practiceVar = "var changed inside";
+
+      console.log(practiceVar)
+
+    }
+
+    //   practiceConst = "const changed outside";
+    //   practiceLet = "let changed outside";
+    //   practiceVar == "var changed outside";
+
+    testing = "i was decalred without a type"
+    console.log(testing)
+    //   console.log(practiceConst)
+    //   console.log(practiceLet)
+      console.log(practiceVar)
